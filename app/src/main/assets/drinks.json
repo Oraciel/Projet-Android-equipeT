@@ -1,14 +1,68 @@
 [
   {
-    "name": "Café",
-    "price": 2.0
-  },
-  {
-    "name": "Thé",
+    "name": "Coca-Cola Classic",
+    "description": "La boisson rafraîchissante et pétillante originale de Coca-Cola. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux), caféine. Prix : 1,50 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Can-Icon-250ml.png",
     "price": 1.5
   },
   {
-    "name": "Coca",
+    "name": "Coca-Cola Zero",
+    "description": "Le goût original de Coca-Cola, sans sucre ni calorie. Composition : eau gazéifiée, colorant (caramel E150d), acidifiants (acide phosphorique, citrate de sodium), édulcorants (aspartame, acésulfame-K), arômes naturels (extraits végétaux), caféine. Prix : 1,50 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Zero-Can-Icon-250ml.png",
+    "price": 1.5
+  },
+  {
+    "name": "Coca-Cola Light",
+    "description": "Le goût original de Coca-Cola, avec moins de sucre et de calorie. Composition : eau gazéifiée, colorant (caramel E150d), acidifiants (acide phosphorique, citrate de sodium), édulcorants (aspartame, acésulfame-K), arômes naturels (extraits végétaux), caféine. Prix : 1,50 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Light-Can-Icon-250ml.png",
+    "price": 1.5
+  },
+  {
+    "name": "Coca-Cola Cherry",
+    "description": "Le goût classique de Coca-Cola avec une touche de cerise. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux), caféine, extraits de cerise. Prix : 1,80 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Cherry-Can-Icon-250ml.png",
+    "price": 1.8
+  },
+  {
+    "name": "Coca-Cola Vanilla",
+    "description": "Le goût classique de Coca-Cola avec une touche de vanille. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux), caféine, extraits de vanille. Prix : 1,80 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Vanilla-Can-Icon-250ml.png",
+    "price": 1.8
+  },
+  {
+    "name": "Coca-Cola Life",
+    "description": "Le goût original de Coca-Cola, avec moins de sucre et de calorie grâce à l'utilisation de stévia. Composition : eau gazéifiée, sucre, acidifiant (acide phosphorique), arômes naturels (extraits végétaux), caféine, édulcorant (glycosides de stéviol). Prix : 1,60 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Life-Can-Icon-250ml.png",
+    "price": 1.6
+  },
+  {
+    "name": "Coca-Cola Caffeine Free",
+    "description": "Le goût original de Coca-Cola, sans caféine. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux). Prix : 1,50 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-CaffeineFree-Can-Icon-250ml.png",
+    "price": 1.5
+  },
+  {
+    "name": "Coca-Cola Raspberry",
+    "description": "Le goût classique de Coca-Cola avec une touche de framboise. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux), caféine, extraits de framboise. Prix : 1,80 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Raspberry-Can-Icon-250ml.png",
+    "price": 1.8
+  },
+  {
+    "name": "Coca-Cola Orange",
+    "description": "Le goût classique de Coca-Cola avec une touche d'orange. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux), caféine, extraits d'orange. Prix : 1,80 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Orange-Can-Icon-250ml.png",
+    "price": 1.8
+  },
+  {
+    "name": "Coca-Cola Energy",
+    "description": "Le goût classique de Coca-Cola avec une dose d'énergie. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiants (acide phosphorique, citrate de sodium), caféine, extraits de guarana, extraits de noix de cola, vitamines B3, B6 et B12. Prix : 2,00 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-Energy-Can-Icon-250ml.png",
     "price": 2.0
-  }
+  },
+  {
+    "name": "Coca-Cola Signature Mixers",
+    "description": "Des mélanges uniques de saveurs pour accompagnement de vos boissons préférées. Composition : eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux), caféine, extraits de citron, extraits de citron vert, extraits de gingembre, extraits de pamplemousse, extraits de pomme, extraits de poire, extraits de vanille. Prix : 1,80 €.",
+    "image_url": "https://www.coca-cola.fr/content/dam/one/fr/fr/home/heritage/Coke-SignatureMixers-Can-Icon-250ml.png",
+    "price": 2.5
+    }
 ]
