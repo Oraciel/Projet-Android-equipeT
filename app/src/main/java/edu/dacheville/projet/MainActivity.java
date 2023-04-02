@@ -1,10 +1,14 @@
 package edu.dacheville.projet;
 
+import static edu.dacheville.projet.Application.DRINK;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -12,6 +16,7 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +33,21 @@ public class MainActivity extends AppCompatActivity {
         drinksRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<Drink> drinks = loadDrinksFromJson();
-        drinksRecyclerView.setAdapter(new DrinksAdapter(drinks));
+        DrinksAdapter drinksAdapter = new DrinksAdapter(drinks);
+        drinksRecyclerView.setAdapter(drinksAdapter);
+
+        drinksAdapter.setOnClickListener(new DrinksAdapter.OnClickListener() {
+            @Override
+            public void onClick(Drink drink) {
+                onClickDrink(drink);
+            }
+        });
+    }
+
+    public void onClickDrink(Drink item){
+        Intent intent = new Intent(getApplicationContext(), DrinkActivity.class);
+        intent.putExtra(DRINK,(Parcelable) item);
+        startActivity(intent);
     }
 
     private List<Drink> loadDrinksFromJson() {
@@ -38,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
             inputStream.close();
-            String json = new String(buffer, "UTF-8");
+            String json = new String(buffer, StandardCharsets.UTF_8);
             Gson gson = new Gson();
             Type drinksType = new TypeToken<List<Drink>>() {}.getType();
             return gson.fromJson(json, drinksType);

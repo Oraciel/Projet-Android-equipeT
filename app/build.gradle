@@ -40,4 +40,5 @@ dependencies {
     //Ajout des dépendances
     implementation 'com.android.volley:volley:1.2.1' // Pour les requêtes réseau
     implementation 'com.google.code.gson:gson:2.8.9' // Pour convertir les données JSON
+    implementation 'com.squareup.picasso:picasso:2.8' // Pour charger les images
 }
