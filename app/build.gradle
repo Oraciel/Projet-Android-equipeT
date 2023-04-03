@@ -22,6 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -41,4 +42,6 @@ dependencies {
     implementation 'com.android.volley:volley:1.2.1' // Pour les requêtes réseau
     implementation 'com.google.code.gson:gson:2.8.9' // Pour convertir les données JSON
     implementation 'com.squareup.picasso:picasso:2.8' // Pour charger les images
+    implementation 'com.google.android.gms:play-services-ads:22.0.0' // Pour les publicités
+
 }

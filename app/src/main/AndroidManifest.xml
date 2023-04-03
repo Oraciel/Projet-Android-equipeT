@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projet"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1761740730698868~8491329925"/>
+
         <activity
             android:name=".PaymentActivity"
             android:exported="false" />
