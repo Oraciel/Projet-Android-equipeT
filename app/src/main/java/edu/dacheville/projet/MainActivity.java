@@ -32,14 +32,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        //load for adds
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
         drinksRecyclerView = findViewById(R.id.drinks_recyclerview);
         drinksRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
