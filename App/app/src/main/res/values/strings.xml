@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Projet</string>
+    <string name="name">Name</string>
+    <string name="todo">TODO</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="commander">COMMANDER</string>
+    <string name="_1">1</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="r_capitulatif_de_votre_commande">Récapitulatif de votre commande</string>
+    <string name="TODO">TODO</string>
+    <string name="product">Product</string>
+    <string name="total">Total</string>
+    <string name="n_oubliez_pas_de_mettre_votre_v_te_sur_cette_boisson">N\'oubliez pas de mettre votre vôte sur cette boisson !</string>
+    <string name="confirmer_l_achat">CONFIRMER L\'ACHAT</string>
+    <string name="enter_your_card_details">Enter your card details</string>
+    <string name="pay">Pay</string>
+    <string name="Animation">TODO</string>
+    <string name="votre_commande_a_t_trait_e_avec_succ_s_et_sera_livr_e_dans_l_heure_qui_suit">Votre commande a été traitée avec succès et sera livrée dans l\'heure qui suit.</string>
+    <string name="drinkimg">TODO</string>
+</resources>
