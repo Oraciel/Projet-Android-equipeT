@@ -12,6 +12,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import static edu.dacheville.projet.Application.DRINK;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DrinkActivity extends AppCompatActivity {
     private Drink drink;
