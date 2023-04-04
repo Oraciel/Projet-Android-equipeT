@@ -28,9 +28,12 @@ public class SplashActivity extends AppCompatActivity {
 
         ImageView appLogo = findViewById(R.id.app_logo);
 
+        //animation for logo on launch
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.logo_animation);
         appLogo.startAnimation(animation);
 
+
+        //delay for splash screen
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
             finish();

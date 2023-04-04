@@ -56,6 +56,8 @@ public class OrderActivity extends AppCompatActivity {
         });
     }
 
+
+    //interstitial ad from google
     public void interstitalAd(){
         AdRequest adRequest = new AdRequest.Builder().build();
 
