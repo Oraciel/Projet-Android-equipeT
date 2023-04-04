@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:background="@android:color/white"
     android:padding="8dp">
 
     <ImageView
@@ -23,12 +24,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:textColor="#B10F0F"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/drink_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
     </LinearLayout>
