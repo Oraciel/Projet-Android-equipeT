@@ -33,22 +33,25 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
+        //insertion of advertising
         interstitalAd();
 
+        //recovery of the drink and its corresponding information
         Drink drink = getIntent().getParcelableExtra(DRINK);
         int count = getIntent().getIntExtra("quantite", 0);
         double prixTotal = getIntent().getDoubleExtra("prixTotal", 0);
 
+        //updates the order information
         ((TextView)findViewById(R.id.order)).setText(drink.getName()+" X "+ count);
         ((TextView)findViewById(R.id.total)).setText("Total : "+ prixTotal +"0 €");
-
         ImageView imageView = findViewById(R.id.imgV);
         imageView.setImageResource(drink.getImage());
 
+        //rating bar and display in Toast of the selected rating
         RatingBar ratingBar = findViewById(R.id.ratingBar);
         ratingBar.setOnRatingBarChangeListener((ratingBar1, rating, fromUser) -> Toast.makeText(getApplicationContext(), "Votre note est : " + rating + "\nMerci d'avoir donné votre avis", Toast.LENGTH_SHORT).show());
 
-
+        //button that sends to the payment activity
         Button confirmBtn = findViewById(R.id.confirm_order);
         confirmBtn.setOnClickListener(view -> {
             Intent intent = new Intent(this, PaymentActivity.class);
@@ -56,8 +59,6 @@ public class OrderActivity extends AppCompatActivity {
         });
     }
 
-
-    //interstitial ad from google
     public void interstitalAd(){
         AdRequest adRequest = new AdRequest.Builder().build();
 

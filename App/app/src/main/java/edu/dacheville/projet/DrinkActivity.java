@@ -22,14 +22,17 @@ public class DrinkActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink);
 
+        //recovers the drink selected in the previous activity
         drink = getIntent().getParcelableExtra(DRINK);
+
+        //update the information of the drink
         ((TextView)findViewById(R.id.drinkPrice)).setText(drink.getPrice() +"0 €");
         ((TextView)findViewById(R.id.drinkName)).setText(drink.getName());
         ((TextView)findViewById(R.id.drinkDescription)).setText(drink.getDescription());
-
         ImageView imageView = findViewById(R.id.imageView);
         imageView.setImageResource(getImageName(drink));
 
+        //button and text to choose the quantity of drink
         Button minusBtn = findViewById(R.id.ButtonMinus);
         Button addBtn = findViewById(R.id.ButtonAdd);
         final TextView display = findViewById(R.id.Cpt);
@@ -38,11 +41,13 @@ public class DrinkActivity extends AppCompatActivity {
         display.setText(Integer.toString(count));
         price.setText((float) (drink.getPrice() * count) +"0 €");
 
+        //increases the quantity and the price according to the chosen quantity
         addBtn.setOnClickListener(view -> {
             display.setText(Integer.toString(++count));
             price.setText((float) (drink.getPrice() * count) +"0 €");
         });
 
+        //decreases the quantity and the price according to the chosen quantity
         minusBtn.setOnClickListener(view -> {
             if (count > 1) {
                 display.setText(Integer.toString(--count));
@@ -52,10 +57,13 @@ public class DrinkActivity extends AppCompatActivity {
 
 
 
+        //creation of an AlertDialog when clicking on buttonBuy
         findViewById(R.id.buttonBuy).setOnClickListener(click -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("BOISSON");
+            //short summary of the order
             builder.setMessage("Vous voulez commandé la boisson : " + "\n" + count + " X " + drink.getName() + "\nPour un total de : " + (float) (drink.getPrice() * count) +"0 €");
+            //button on the AlertDialog then Parcelab which sends the important information and goes to the DrinkActivity
             builder.setNeutralButton("Passez au récapitulatif", (dialogInterface, i) -> {
                 Intent intent = new Intent(DrinkActivity.this, OrderActivity.class);
                 intent.putExtra("boisson", drink.getName());
@@ -71,6 +79,9 @@ public class DrinkActivity extends AppCompatActivity {
 
     }
 
+    //function that retrieves the image corresponding to the product
+    //input the selected drink
+    //the image of the drink in int
     private int getImageName(Drink drink) {
         int imageSrc;
         switch (drink.getName()) {
